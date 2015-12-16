@@ -2,7 +2,7 @@
 
 Simple example of integration [Syncano](https://syncano.io/) with [Fuse](https://www.fusetools.com/)
 
-![Screenshot](https://github.com/Syncano/syncano-fuse-example/example.png)
+![Screenshot](https://raw.githubusercontent.com/Syncano/syncano-fuse-example/master/example.png)
 
 # Setup
 
