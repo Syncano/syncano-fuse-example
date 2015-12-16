@@ -1,0 +1,30 @@
+<App Theme="Basic" Background="#eee">
+    <JavaScript File="./syncano-js/dist/syncano.js" ux:Global="Syncano" />
+    <DockPanel>
+        <JavaScript File="MainView.js" />
+        <StatusBarBackground Dock="Top" />
+        <Button Text="Add instance" Clicked="{addInstance}" Dock="Top" />
+        <ScrollView>
+            <StackPanel>
+                <Each Items="{instances}">
+                    <DockPanel Padding="10" Margin="0,1" Background="#fff">
+                        <Text Value="{name}" Alignment="CenterLeft" />
+                        <Button Text="Delete" Clicked="{removeInstance}" Dock="Right" />
+
+                        <LayoutAnimation>
+                            <Move RelativeTo="LayoutChange" Y="1" Duration="0.8" Easing="ElasticIn" />
+                        </LayoutAnimation>
+
+                        <AddingAnimation>
+                            <Move RelativeTo="Size" X="1" Duration="0.3" Easing="CircularIn" />
+                        </AddingAnimation>
+
+                        <RemovingAnimation>
+                            <Move RelativeTo="Size" X="-1" Duration="0.4" Easing="CircularOut" />
+                        </RemovingAnimation>
+                    </DockPanel>
+                </Each>
+            </StackPanel>
+        </ScrollView>
+    </DockPanel>
+</App>
