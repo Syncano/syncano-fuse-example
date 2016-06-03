@@ -1,5 +1,5 @@
 <App Theme="Basic" Background="#eee">
-    <JavaScript File="./syncano-js/dist/syncano.js" ux:Global="Syncano" />
+    <JavaScript File="./syncano-js/dist/syncano.fuse.js" ux:Global="Syncano" />
     <DockPanel>
         <JavaScript File="MainView.js" />
         <StatusBarBackground Dock="Top" />
