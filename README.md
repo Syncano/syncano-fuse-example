@@ -8,7 +8,7 @@ Simple example of integration [Syncano](https://syncano.io/) with [Fuse](https:/
 
 * Create account at [Syncano](https://syncano.io/)
 * Install [Fuse](https://www.fusetools.com/)
-* Clone [syncano-js](https://github.com/Syncano/syncano-js) lib into root catalog:
+* Download the latest release of [syncano-js](https://github.com/Syncano/syncano-js) and unpack it into the project:
 
 ```
     ├── MainView.js
@@ -17,15 +17,20 @@ Simple example of integration [Syncano](https://syncano.io/) with [Fuse](https:/
     ├── example.png
     ├── syncano-fuse.unoproj
     └── syncano-js
-        ├── Gulpfile.js
+        ├── CHANGELOG.md
         ├── README.md
         ├── bower.json
         ├── circle.yml
+        ├── conf.json
+        ├── karma.config.js
+        ├── package.json
+        ├── webpack.config.js
+        ├── manual
+        ├── src
         ├── dist
         ├── lib
-        ├── package.json
-        ├── src
-        └── test
+        ├── test
+        └── tutorials
 ```
 
 * Edit `MainView.js` and replace `PUT_HERE_YOUR_KEY` with your [Syncano](https://syncano.io/) account key.
