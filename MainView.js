@@ -1,4 +1,4 @@
-var Syncano = require("Syncano");
+var Syncano = require("syncano-js/dist/syncano.fuse.js");
 var Observable = require("FuseJS/Observable");
 var instances = Observable();
 var account = Syncano({accountKey : "PUT_HERE_YOUR_KEY"});

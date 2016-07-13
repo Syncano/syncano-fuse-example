@@ -1,4 +1,4 @@
-<App Theme="Basic" Background="#eee">
+<App Background="#eee">
     <JavaScript File="./syncano-js/dist/syncano.fuse.js" ux:Global="Syncano" />
     <DockPanel>
         <JavaScript File="MainView.js" />
@@ -9,7 +9,7 @@
                 <Each Items="{instances}">
                     <DockPanel Padding="10" Margin="0,1" Background="#fff">
                         <Text Value="{name}" Alignment="CenterLeft" />
-                        <Button Text="Delete" Clicked="{removeInstance}" Dock="Right" />
+                        <Basic.Button Text="Delete" Clicked="{removeInstance}" Dock="Right" />
 
                         <LayoutAnimation>
                             <Move RelativeTo="LayoutChange" Y="1" Duration="0.8" Easing="ElasticIn" />
